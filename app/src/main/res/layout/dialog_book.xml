@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:gravity="center_vertical"
+    android:orientation="vertical"
+    android:background="@color/colorPrimaryDark"
+    android:layout_height="wrap_content">
+
+    <EditText
+        android:id="@+id/isbnEt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:background="@drawable/bg_white_bordered_primary"
+        android:hint="Ingrese ISBN de libro"
+        android:inputType="number"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/descriptionEt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="2"
+        android:background="@drawable/bg_white_bordered_primary"
+        android:hint="Ingrese breve descripción libro"
+        android:inputType="text"
+
+        android:padding="8dp" />
+
+    <Button
+        android:id="@+id/saveBookIb"
+        android:text="Guardar"
+        android:layout_width="140dp"
+        android:layout_height="54dp"
+        android:scaleType="centerCrop"
+        android:layout_gravity="center"
+        android:theme="@style/AccentButton" />
+
+</LinearLayout>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,54 +7,18 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+       <include layout="@layout/content_main" />
+
+       <android.support.design.widget.FloatingActionButton
+        android:id="@+id/mainFab"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="E-mail"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <AutoCompleteTextView
-        android:id="@+id/email"
-
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center"
-        android:hint="Ingrese su email"
-        android:inputType="textEmailAddress"
-        android:maxLines="1"
-        android:singleLine="true" />
-
-
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Password: "
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <AutoCompleteTextView
-        android:id="@+id/password"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:maxLines="1"
-        android:singleLine="true" />
-
-
-    <Button
-        android:id="@+id/loginBtn"
-        android:layout_width="93dp"
-        android:layout_height="37dp"
-        android:text="Login"
-        tools:layout_editor_absoluteX="146dp"
-        tools:layout_editor_absoluteY="228dp" />
+        android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/fab_margin"
+        app:srcCompat="@mipmap/baseline_add_black_48dp" />
 
 
 
 
-</LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
